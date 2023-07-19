@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup form</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width: 1238px)" href="phone.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="theme-switch-container">
+                <label class="theme-slider" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="round slider"></div>
+                </label>
+                <p>use this slider to change theme</p>
+            </div>
+        </nav>
+    </header>
+
+    <div class="modal">
+        <button id="btn" onclick="togglehide()">Signup</button>
+    </div>
+
+    <div id="whole">
+    <div id="container">
+        <div class="formbox">
+            <h1>Signup form</h1>
+            <br>
+        <form id="form" action="">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" placeholder="Enter your name" minlength="5"  title="Only Letters" pattern="[a-zA-Z ]+" required >
+        <br>
+
+        <label for="mail">Email:</label><br>
+        <input type="email" name="email" id="mailid" placeholder="abc@gmail.com" pattern=".+@gmail.com" required>
+        <br>
+        <br>
+
+       <div class="formpart">
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" placeholder="Enter your password" minlength="8" required>
+        <br>
+
+        <label for="phNum">Phone number:</label><br>
+        <input type="phNum" name="phonenumber" id="phNum" placeholder="Phone No." title="enter 10 digit number"  pattern="[1-9]{1}[0-9]{9}" required>
+       </div>
+        <br><br>
+        
+        <label for="gender">Gender:</label>
+        <br><br>
+        <div class="gendername">
+        <label for="gendera">
+             <input type="radio" value="male" name="gendername" id="gendera" required>Male</label>
+        <label for="genderb" >
+            <input type="radio" value="female" name="gendername" id="genderb" required>Female</label>
+        <label for="genderc" >
+            <input type="radio" value="others" name="gendername" id="genderc" required>Others</label>
+        
+            
+       <br><br><br>
+    </div>
+    
+
+    <label for="select">Select your sport:</label><br>
+        <select name="sports" class="selectval"  id="subjectName" onchange="selectedSubjectName()">
+            <option value="select" style="font-weight: 2;">select</option>
+            <option value="cricket">Cricket</option>
+            <option value="badminton">Badminton</option>
+            <option value="football">football</option>
+            <option value="hockey">Hockey</option>
+            <option value="tennis">Tennis</option>
+        </select>
+        <br><br>
+
+        <button type="submit" onclick="consoleprint()" >signup</button>
+
+        </form>
+    </div>
+    </div>
+    
+</div>
+    <script src="index.js"></script>
+</body>
+</html>

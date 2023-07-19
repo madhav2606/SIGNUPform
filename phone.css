@@ -1,0 +1,10 @@
+.formpart{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   left: 30px;
+}
+
+.formpart input{
+    width: 300px;
+}

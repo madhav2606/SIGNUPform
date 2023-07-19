@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Default light theme */
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --text-color: #424242;
+    --background-color: #fff;
+    --heading-color: #292922;
+}
+  
+/* Dark theme */
+[theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --text-color: #e1e1ff;
+    --background-color: #161625;
+    --heading-color: #818cab;
+}
+  
+body{
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(87, 96, 87);
+}
+
+.container{
+    background-image:linear-gradient(to right bottom,rgb(0, 0, 0),rgb(76, 172, 17)), url(img.jpeg);
+    height: 100vh;
+    
+}
+.formbox{
+    margin: auto;
+    padding: 20px;
+    /* margin-top: 200px; */
+    background-color: white;
+    color: black;
+    height: 91vh;
+    width: 50vw;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+.formpart{
+    display: flex;
+    position: relative;
+    left: -12px;
+    width: 103.5%;
+    justify-content: space-around;
+    /* align-items: right; */
+}
+ 
+/* Adding css variable in our webpage */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+  
+h1 {
+    color: var(--secondary-color);
+}
+  
+a {
+    color: var(--primary-color);
+}
+  
+/* Slider styling */
+.theme-switch-container {
+    display: flex;
+    align-items: center;
+}
+  
+.theme-slider {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+  
+.theme-slider input {
+    display: none;
+}
+  
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+  
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+  
+input:checked+.slider {
+    background-color: #66bb6a;
+}
+  
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+form label{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* flex-direction: column; */
+    /* align-items: left; */
+}
+
+input{
+    height: 30px;
+}
+button[type=submit]{
+   
+    height: 50px;
+    border-radius: 23px;
+    color: white;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to left,rgb(0, 0, 0),rgb(76, 187, 76)),url(#);
+    width: 40vw;
+    margin: auto;
+}
+button[type=submit]:hover{
+    background-image: linear-gradient(to right,rgb(76, 76, 33),rgb(152, 103, 13)),url(#);
+    transform: scale(1.05);
+    box-shadow: 0.3rem 0.3rem 0.3rem rgb(56, 49, 49);
+    position: relative;
+    top: -3px;
+}
+
+button[type=submit]:active{
+    position: relative;
+    top: 2px;
+    box-shadow: 0.2rem 0.2rem 0.3rem rgb(56, 49, 49);
+}
+input{
+    height: 40px;
+    font-size: 1.2rem;
+    padding-left: 5px;
+}
+input:hover{
+    box-shadow: 0.2rem 0.1rem 0.5rem rgb(88, 88, 85);
+}
+input[type=radio]:hover{
+    box-shadow: none;
+    transform: scale(1.1);
+
+}
+input[type=password],input[type=phNum]{
+    padding-left: 5px;
+    width: 15vw;
+    position: relative;
+    top: -9px;
+    margin-left: -30px;
+}
+
+.gendername{
+    display: flex;
+    flex-direction: row;
+    
+}
+.gendername input{
+    position: relative;
+    top: -9px;
+    margin-right: 10px;
+}
+
+.gendername label{
+    margin-right: 16vw;
+    font-size: 1.2rem;
+    font-weight: 6;
+    position: relative;
+    top: -10px;
+
+}
+.gendername label:hover{
+    transform: scale(1.03);
+
+}
+
+input[type = radio]{
+    font-size: 2rem;
+    
+}
+select{
+    font-size: 1.2rem;
+    height: 40px;
+}
+
+input:focus{
+    outline: 2px solid rgb(78, 142, 94);
+}
+input[type = radio]:focus{
+    outline: 2px solid white;
+}
+
+#whole{
+    display: none;
+}
+
+#btn{
+    width: 100px;
+    height: 40px;
+    margin: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 23px;
+}
